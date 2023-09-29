@@ -1,7 +1,7 @@
 'use client'
 import AnimatedText from '@/components/AnimatedText'
 import Head from 'next/head'
-import React, { useRef } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import arrow from '../../../public/icons/down_arrow.gif'
