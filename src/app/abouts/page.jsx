@@ -9,11 +9,7 @@ import SKills from '@/components/SKills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 
-
-
-
 const Page = () => {
-
     const text = {
         initial: {
             opacity: 0
@@ -26,15 +22,12 @@ const Page = () => {
         }
     }
 
-
     const skillsRef = useRef()
     const scrollToSkills = () => {
         if (skillsRef.current) {
             skillsRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
-
-
 
     return (
         <>
@@ -43,7 +36,7 @@ const Page = () => {
                 <meta name="description" content="--" />
             </Head>
 
-            <main className='h-full w-full flex flex-col items-center justify-center p-5  mt-[7rem]'>
+            <main className='h-full w-full flex flex-col items-center justify-center p-5 mt-[7rem]'>
                 <AnimatedText
                     className='!text-5xl text-center'
                     text="Let Me Tell You More About Me"
@@ -54,7 +47,8 @@ const Page = () => {
                     initial="initial"
                     animate="animate"
                     className='!text-xl text-center font-normal mt-3 p-4' >
-                    Hello! I'm Prashant Sharma, a passionate web developer with a knack for turning ideas into interactive and efficient web applications. My journey in the world of web development has equipped me with a diverse skill set that spans both front-end and back-end technologies. I take pride in creating seamless digital experiences that not only look great but also function flawlessly.                </motion.p>
+                    Hello! I'm Prashant Sharma, a passionate web developer with a knack for turning ideas into interactive and efficient web applications. My journey in the world of web development has equipped me with a diverse skill set that spans both front-end and back-end technologies. I take pride in creating seamless digital experiences that not only look great but also function flawlessly.
+                </motion.p>
 
                 <motion.p
                     variants={text}
@@ -65,13 +59,13 @@ const Page = () => {
                 </motion.p>
 
                 <Image src={arrow}
-                onClick={scrollToSkills}
+                    onClick={scrollToSkills}
                     className=' h-[3rem] w-[3rem] mt-[5rem] hover:cursor-pointer'
                 />
 
                 {/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
 
-                <SKills skillsRef={skillsRef}  />
+                <SKills skillsRef={skillsRef} />
 
                 {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
 
@@ -88,4 +82,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Page;
