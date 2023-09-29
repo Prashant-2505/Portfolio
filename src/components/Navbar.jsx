@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className='w-full px-32 py-8 font-medium flex items-center justify-between fixed top-0 z-40 bg-[#f5f6fa] '>
             <nav>
                 <CustomLink className='mr-4' href="/" title="Home" />
-                <CustomLink className='mx-4' href="/about" title="About" />
+                <CustomLink className='mx-4' href="/About" title="About" />
                 <CustomLink className='ml-4' href="/project" title="Projects" />
             </nav>
             <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
