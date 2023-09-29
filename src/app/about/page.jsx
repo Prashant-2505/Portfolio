@@ -10,6 +10,20 @@ import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 
 
+function usePage() {
+    const skillsRef = useRef();
+  
+    const scrollToSkills = () => {
+      if (skillsRef.current) {
+        skillsRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+  
+    return {
+      skillsRef,
+      scrollToSkills,
+    };
+  }
 
 const Page = () => {
 
@@ -26,13 +40,7 @@ const Page = () => {
     }
 
 
-    const skillsRef = useRef(); 
-
-    const scrollToSkills = () => {
-        if (skillsRef.current) {
-            skillsRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+    const { skillsRef, scrollToSkills } = usePage();
 
 
 
