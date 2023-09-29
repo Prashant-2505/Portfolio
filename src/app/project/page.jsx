@@ -6,6 +6,7 @@ const page = () => {
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quis esse reprehenderit vero ex odit, minus dolorum quo, asperiores optio doloremque cum rerum, cupiditate nesciunt maxime! Modi minus nesciunt repellat!
       </p>
+      <h1>Lorem, ipsum dolor.</h1>
     </div>
   )
 }
