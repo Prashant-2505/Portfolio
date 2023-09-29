@@ -11,7 +11,7 @@ import Education from '@/components/Education'
 
 
 
-const page = () => {
+const Page = () => {
 
     const text = {
         initial: {
@@ -88,4 +88,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
