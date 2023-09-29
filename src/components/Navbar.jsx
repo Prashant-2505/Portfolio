@@ -32,7 +32,7 @@ const Navbar = () => {
             <nav>
                 <CustomLink className='mr-4' href="/" title="Home" />
                 <CustomLink className='mx-4' href="/about" title="About" />
-                <CustomLink className='ml-4' href="/projects" title="Projects" />
+                <CustomLink className='ml-4' href="/project" title="Projects" />
             </nav>
             <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
                 <Logo />
