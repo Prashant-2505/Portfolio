@@ -1,7 +1,7 @@
 'use client'
 import AnimatedText from '@/components/AnimatedText'
 import Head from 'next/head'
-import React from 'react'
+import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import arrow from '../../../public/icons/down_arrow.gif'
@@ -27,12 +27,12 @@ const Page = () => {
     }
 
 
-    // const skillsRef = useRef()
-    // const scrollToSkills = () => {
-    //     if (skillsRef.current) {
-    //         skillsRef.current.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
+    const skillsRef = useRef()
+    const scrollToSkills = () => {
+        if (skillsRef.current) {
+            skillsRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
 
 
@@ -65,12 +65,13 @@ const Page = () => {
                 </motion.p>
 
                 <Image src={arrow}
+                onClick={scrollToSkills}
                     className=' h-[3rem] w-[3rem] mt-[5rem] hover:cursor-pointer'
                 />
 
                 {/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
 
-                <SKills  />
+                <SKills skillsRef={skillsRef}  />
 
                 {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
 
