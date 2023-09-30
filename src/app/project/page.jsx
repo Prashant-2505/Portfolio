@@ -9,7 +9,7 @@ import project2 from '../../../public/images/project2.png'
 
 import { BsGithub } from 'react-icons/bs'
 import Link from 'next/link'
-import  { useThemeContext } from '../context/theme'
+import  { useThemeContext } from '../context/Theme'
 const page = () => {
 
   const {theme} = useThemeContext()

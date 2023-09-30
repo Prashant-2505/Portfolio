@@ -8,7 +8,7 @@ import arrow from '../../../public/icons/down_arrow.gif'
 import SKills from '@/components/SKills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
-import { useThemeContext } from '../context/theme'
+import { useThemeContext } from '../context/Theme'
 
 const Page = () => {
     const text = {
