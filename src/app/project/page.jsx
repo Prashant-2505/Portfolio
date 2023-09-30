@@ -9,18 +9,20 @@ import project2 from '../../../public/images/project2.png'
 
 import { BsGithub } from 'react-icons/bs'
 import Link from 'next/link'
+import { useThemeContext } from '../context/theme'
 const page = () => {
 
+  const {theme} = useThemeContext()
 
   return (
-    <div className={` w-full mt-[6rem] text-center  justify-center items-center `}>
+    <div className={` w-full mt-[6rem] text-center  justify-center items-center ${!theme ? 'bg-[#2c3e50] text-white':'text-[#2c3e50]'}`}>
       <h1 className=' font-bold text-7xl inline-block px-32 leading-relaxed'>
         Imagination Trumps Knowledge!
       </h1>
       <div className="grid h-full grid-cols-2 gap-9 place-items-center py-[5rem] ">
 
         {/* project1 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col   p-6 shadow-2xl rounded-md shadow-[#5c4f30]}`}>
+        <div className={`h-[100%] w-[40vw] flex flex-col   p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]':''}`}>
           <Image className=' h-[40vh] w-full' src={project1} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>travellers</h1>
           <p className='my-3 font-base text-left'>
@@ -39,7 +41,7 @@ const page = () => {
 
 
         {/* project 2 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col   p-6 shadow-2xl rounded-md shadow-[#5c4f30]}`}>
+        <div className={`h-[100%] w-[40vw] flex flex-col   p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]':''}`}>
           <Image className=' h-[40vh] w-full' src={project2} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>Vidiscape</h1>
           <p className='my-3 font-base text-left'>
@@ -55,15 +57,14 @@ const page = () => {
 
 
         {/* project 3 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col   p-6 shadow-2xl rounded-md shadow-[#5c4f30]}`}>
+        <div className={`h-[100%] w-[40vw] flex flex-col   p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]':''}`}>
           <Image className=' h-[40vh] w-full' src={demo} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>WearAble</h1>
           <p className='my-3 font-base text-left'>
             WearAble" is a dynamic ecommerce clothing web application, meticulously developed using a powerful technology stack comprising MongoDB, React, Node.js, and Express.js. This platform offers users a secure and seamless shopping experience for a diverse range of clothing items.
           </p>
           <div className='text-left flex items-center space-x-10 my-4'>
-            <Link href={'https://wearable.onrender.com/'} target='_blank'>
-              <button className=' bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
+            <Link href={'https://wearable.onrender.com/'} target='_blank'>            <button className=' bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
             </Link>
             <Link href={'https://github.com/Prashant-2505/wearAble'} target='_blank'>
               <BsGithub className='text-4xl cursor-pointer' />
