@@ -4,7 +4,7 @@ import React, { useContext, useState } from 'react';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import { BsLinkedin, BsGithub,BsFillSunFill,BsFillMoonStarsFill } from 'react-icons/bs'
-import { SiHackerrank } from 'react-icons/si'
+import { SiHackerrank,SiLeetcode } from 'react-icons/si'
 import { motion } from 'framer-motion'
 import  { useThemeContext } from '@/app/context/theme';
 
@@ -63,6 +63,17 @@ const Navbar = () => {
                 >
                     <BsGithub />
                 </motion.a>
+
+                <motion.a
+                    whileHover={{ y: -3 }}
+                    whileTap={{scale:0.9}}
+                    href='https://leetcode.com/prashant_71200/'
+                    target='_blank'
+                    className='text-3xl text-yellow-500'
+                >
+                    < SiLeetcode/>
+                </motion.a>
+
                 <motion.a
                     whileHover={{ y: -3 }}
                     whileTap={{scale:0.9}}
@@ -83,6 +94,8 @@ const Navbar = () => {
                     {theme ?  <BsFillSunFill/> :  <BsFillMoonStarsFill/>}
         
                 </motion.a>
+
+                
                
             </nav>
         </div>
