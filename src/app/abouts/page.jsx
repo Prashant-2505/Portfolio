@@ -1,14 +1,14 @@
 'use client'
 import AnimatedText from '@/components/AnimatedText'
 import Head from 'next/head'
-import React, { useContext, useRef } from 'react'
+import React, {  useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import arrow from '../../../public/icons/down_arrow.gif'
 import SKills from '@/components/SKills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
-import ThemeContext, { useThemeContext } from '../context/theme'
+import { useThemeContext } from '../context/theme'
 
 const Page = () => {
     const text = {
