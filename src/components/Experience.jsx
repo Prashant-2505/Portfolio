@@ -1,7 +1,7 @@
-import React, { useContext, useRef } from 'react'
+import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import LiIcons from './LiIcons'
-import ThemeContext, { useThemeContext } from '@/app/context/theme'
+import { useThemeContext } from '@/app/context/theme'
 
 const Details = ({ position, company, time, address, work }) => {
 

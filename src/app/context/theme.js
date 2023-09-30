@@ -2,9 +2,9 @@
 
 import React, { createContext, useContext, useState } from "react";
 
-const ThemeContext = createContext(null);
+const ThemeContext = createContext({ theme: true, setTheme: () => {} });
 
-export const ThemeContextProvider = ({ children }) => {
+export default function ThemeContextProvider ({ children }) {
   const [theme, setTheme] = useState(true);
 
   return (
@@ -14,12 +14,4 @@ export const ThemeContextProvider = ({ children }) => {
   );
 };
 
-export const useThemeContext = () => {
-  // Check if the component is being rendered on the server.
-  if (typeof window === "undefined") {
-    return { theme: true, setTheme: () => {} };
-  }
-
-  // Otherwise, return the theme context.
-  return useContext(ThemeContext);
-};
+export const useThemeContext = () => useContext(ThemeContext);
