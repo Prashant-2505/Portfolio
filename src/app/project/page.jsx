@@ -64,7 +64,7 @@ const Page = () => {
             WearAble is a dynamic ecommerce clothing web application, meticulously developed using a powerful technology stack comprising MongoDB, React, Node.js, and Express.js. This platform offers users a secure and seamless shopping experience for a diverse range of clothing items.
           </p>
           <div className='text-left flex items-center space-x-10 my-4'>
-            <Link href={'https://wearable.onrender.com/'} target='_blank'>
+            <Link href={'https://drab-pink-scallop-yoke.cyclic.cloud/'} target='_blank'>
               <button className='bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
             </Link>
             <Link href={'https://github.com/Prashant-2505/wearAble'} target='_blank'>
