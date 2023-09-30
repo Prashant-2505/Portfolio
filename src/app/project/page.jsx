@@ -14,14 +14,16 @@ const Page = () => {
   const { theme } = useThemeContext();
 
   return (
-    <div className={`w-full mt-[5rem] text-center justify-center items-center ${!theme ? 'bg-[#2c3e50] text-white' : 'text-[#2c3e50]'}`}>
+    <div className={`w-full mt-[5rem] text-center justify-center items-center ${!theme ? 'bg-[#2c3e50] text-[#f7f1e3]' : 'text-[#2c3e50]'}`}>
        <AnimatedText 
-       className={`font-bold text-7xl inline-block !px-32 leading-relaxed text-center ${!theme ? 'text-white':''}`}
+       className={`font-bold text-7xl inline-block !px-32 leading-relaxed text-center ${!theme ? 'text-[#f7f1e3]':''}`}
        text='Imagination Trumps Knowledge !'
        />
       <div className="grid h-full grid-cols-2 gap-9 place-items-center py-[5rem]">
+
+
         {/* Project 1 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]' : ''}`}>
+        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}`}>
           <Image className='h-[40vh] w-full' src={project1} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>Travellers</h1>
           <p className='my-3 font-base text-left'>
@@ -38,7 +40,7 @@ const Page = () => {
         </div>
 
         {/* Project 2 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]' : ''}`}>
+        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}`}>
           <Image className='h-[40vh] w-full' src={project2} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>Vidiscape</h1>
           <p className='my-3 font-base text-left'>
@@ -55,7 +57,7 @@ const Page = () => {
         </div>
 
         {/* Project 3 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]' : ''}`}>
+        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}`}>
           <Image className='h-[40vh] w-full' src={project3} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>WearAble</h1>
           <p className='my-3 font-base text-left'>

@@ -14,8 +14,11 @@ import express from '../../public/icons/express.png';
 import c from '../../public/icons/c++.png';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useThemeContext } from '@/app/context/theme';
 
 const Skills = ({skillsRef}) => {
+
+    const {theme} = useThemeContext()
 
     const skills = `
         h-[4rem] 
@@ -36,7 +39,7 @@ const Skills = ({skillsRef}) => {
     return (
         <div className='w-full h-[100vh] pt-[13vh]' ref={skillsRef}>
             <AnimatedText
-                className='!text-5xl text-center '
+                className={`!text-5xl text-center ${!theme ? 'text-[#f7f1e3]':''}`}
                 text="Skills"
             />
             <motion.div

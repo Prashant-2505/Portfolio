@@ -43,7 +43,7 @@ const Page = () => {
 
             <main className={`h-full w-full flex flex-col items-center justify-center p-5 mt-[5rem] ${!theme ? 'bg-[#2c3e50] text-white' : ''}`}>
                 <AnimatedText
-                    className={`!text-5xl text-center ${!theme ? '!text-white' : ''}`}
+                    className={`!text-5xl text-center ${!theme ? '!text-[#f7f1e3]' : ''}`}
                     text="Let Me Tell You More About Me"
                 />
 

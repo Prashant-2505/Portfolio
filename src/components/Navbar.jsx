@@ -35,7 +35,7 @@ const Navbar = () => {
     const { theme, setTheme } = useThemeContext()
 
     return (
-        <div className={`w-full px-32 py-7 font-medium flex items-center justify-between fixed top-0 z-40 ${theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : 'bg-[#2c3e50] text-white' }  `}>
+        <div className={`w-full px-32 py-7 font-medium flex items-center justify-between fixed top-0 z-40 ${theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : 'bg-[#2c3e50] text-[#f7f1e3]' }  `}>
             <nav>
                 <CustomLink className='mr-4' href="/" title="Home" />
                 <CustomLink className='mx-4' href="/abouts" title="About" />
@@ -88,7 +88,7 @@ const Navbar = () => {
                     whileHover={{ y: -3 }}
                     whileTap={{scale:0.9}}
                     target='_blank'
-                    className={`text-3xl ${theme ? 'text-[#2c3e50]':'text-white'} cursor-pointer ml-9`}
+                    className={`text-3xl ${theme ? 'text-[#2c3e50]':'text-[#f7f1e3]'} cursor-pointer ml-9`}
                     onClick={() => setTheme(prevTheme => !prevTheme)}  
                 >
                     {theme ?  <BsFillSunFill/> :  <BsFillMoonStarsFill/>}
