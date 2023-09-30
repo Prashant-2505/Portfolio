@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import LiIcons from './LiIcons'
-import ThemeContext from '@/app/context/theme'
+import ThemeContext, { useThemeContext } from '@/app/context/theme'
 
 const Details = ({ position, company, time, address, work }) => {
 
@@ -38,7 +38,7 @@ const Experience = () => {
     });
 
 
-    const { theme } = useContext(ThemeContext);
+    const { theme } = useThemeContext()
 
 
 
