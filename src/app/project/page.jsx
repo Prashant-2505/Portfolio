@@ -9,10 +9,10 @@ import project2 from '../../../public/images/project2.png'
 
 import { BsGithub } from 'react-icons/bs'
 import Link from 'next/link'
-import ThemeContext from '../context'
+import  { useThemeContext } from '../context/theme'
 const page = () => {
 
-  const {theme} = useContext(ThemeContext)
+  const {theme} = useThemeContext()
 
   return (
     <div className={` w-full mt-[6rem] text-center  justify-center items-center ${!theme ? 'bg-[#2c3e50] text-white':'text-[#2c3e50]'}`}>

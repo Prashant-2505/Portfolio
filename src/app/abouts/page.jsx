@@ -8,7 +8,7 @@ import arrow from '../../../public/icons/down_arrow.gif'
 import SKills from '@/components/SKills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
-import ThemeContext from '../context'
+import ThemeContext, { useThemeContext } from '../context/theme'
 
 const Page = () => {
     const text = {
@@ -31,7 +31,7 @@ const Page = () => {
     };
 
 
-    const { theme } = useContext(ThemeContext);
+    const { theme } = useThemeContext()
 
 
     return (

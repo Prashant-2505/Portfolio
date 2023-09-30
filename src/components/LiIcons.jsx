@@ -1,10 +1,10 @@
 'use client'
-import React, { useContext } from 'react'
+import React from 'react'
 import {motion,useScroll} from 'framer-motion'
-import ThemeContext from '@/app/context';
+import  { useThemeContext } from '@/app/context/theme';
 const LiIcons = ({reference}) => {
 
-    const { theme } = useContext(ThemeContext);
+    const { theme } = useThemeContext();
 
 
     const {scrollYProgress} = useScroll(

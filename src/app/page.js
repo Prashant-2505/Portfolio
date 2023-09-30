@@ -6,11 +6,11 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { BsFillArrowDownCircleFill } from 'react-icons/bs'
 import { useContext } from 'react'
-import ThemeContext from './context'
+import ThemeContext, { useThemeContext } from './context/theme'
 
 export default function Home() {
 
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useThemeContext()
 
   return (
     <main className={`flex h-[100vh] w-full  items-center justify-between mt-[6rem]   ${theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : 'bg-[#2c3e50] text-white' }`}>

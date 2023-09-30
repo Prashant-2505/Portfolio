@@ -6,14 +6,14 @@ import { usePathname } from 'next/navigation';
 import { BsLinkedin, BsGithub,BsFillSunFill,BsFillMoonStarsFill } from 'react-icons/bs'
 import { SiHackerrank } from 'react-icons/si'
 import { motion } from 'framer-motion'
-import ThemeContext from '@/app/context';
+import ThemeContext, { useThemeContext } from '@/app/context/theme';
 
 
 
 
 const CustomLink = ({ href, title, className }) => {
     const path = usePathname()
-    const { theme, setTheme } = useContext(ThemeContext);
+    const { theme, setTheme } = useThemeContext();
 
     return (
 
@@ -32,7 +32,7 @@ const CustomLink = ({ href, title, className }) => {
 }
 
 const Navbar = () => {
-    const { theme, setTheme } = useContext(ThemeContext);
+    const { theme, setTheme } = useThemeContext()
 
     return (
         <div className={`w-full px-32 py-9 font-medium flex items-center justify-between fixed top-0 z-40 ${theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : 'bg-[#2c3e50] text-white' }  `}>
