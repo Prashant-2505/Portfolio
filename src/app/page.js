@@ -12,7 +12,7 @@ export default function Home() {
   const { theme } = useThemeContext()
 
   return (
-    <main className={`flex h-[100vh] w-full  items-center justify-between mt-[6rem]   ${theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : 'bg-[#2c3e50] text-white' }`}>
+    <main className={`flex h-[100vh] w-full  items-center justify-between mt-[5rem]   ${theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : 'bg-[#2c3e50] text-white' }`}>
       <div className=" w-[50%] h-[80vh] flex justify-center items-center">
         <Image className='h-[70%] w-[80%]' src={profile} alt='Prashant' />
       </div>

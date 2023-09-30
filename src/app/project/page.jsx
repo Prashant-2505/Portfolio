@@ -14,7 +14,7 @@ const Page = () => {
   const { theme } = useThemeContext();
 
   return (
-    <div className={`w-full mt-[6rem] text-center justify-center items-center ${!theme ? 'bg-[#2c3e50] text-white' : 'text-[#2c3e50]'}`}>
+    <div className={`w-full mt-[5rem] text-center justify-center items-center ${!theme ? 'bg-[#2c3e50] text-white' : 'text-[#2c3e50]'}`}>
        <AnimatedText 
        className={`font-bold text-7xl inline-block !px-32 leading-relaxed text-center ${!theme ? 'text-white':''}`}
        text='Imagination Trumps Knowledge !'

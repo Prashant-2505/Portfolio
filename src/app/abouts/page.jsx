@@ -41,7 +41,7 @@ const Page = () => {
                 <meta name="description" content="--" />
             </Head>
 
-            <main className={`h-full w-full flex flex-col items-center justify-center p-5 mt-[6rem] ${!theme ? 'bg-[#2c3e50] text-white' : ''}`}>
+            <main className={`h-full w-full flex flex-col items-center justify-center p-5 mt-[5rem] ${!theme ? 'bg-[#2c3e50] text-white' : ''}`}>
                 <AnimatedText
                     className={`!text-5xl text-center ${!theme ? '!text-white' : ''}`}
                     text="Let Me Tell You More About Me"
