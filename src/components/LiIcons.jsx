@@ -1,7 +1,11 @@
 'use client'
-import React from 'react'
+import React, { useContext } from 'react'
 import {motion,useScroll} from 'framer-motion'
+import ThemeContext from '@/app/context';
 const LiIcons = ({reference}) => {
+
+    const { theme } = useContext(ThemeContext);
+
 
     const {scrollYProgress} = useScroll(
         {
@@ -11,14 +15,14 @@ const LiIcons = ({reference}) => {
     )
 
     return (
-        <figure className=' absolute -left-5 stroke-black'>
+        <figure className={`absolute -left-5 ${theme ? 'stroke-[#2c3e50]':'stroke-white'}`}>
             <svg width="75" height="75" viewBox='0 0 100 100'>
                 <circle className='stroke-pink-400 stroke-1 fill-none' cx="75" cy="50" r="20" />
                 <motion.circle
                  style={{
                     pathLength:scrollYProgress
                  }}
-                className=' fill-white stroke-[5px] ' cx="75" cy="50" r="20" />
+                className= {` ${theme ? 'fill-white':'fill-[#2c3e50]'} stroke-[5px]`} cx="75" cy="50" r="20" />
                 <circle className='stroke-1 fill-pink-400' cx="75" cy="50" r="10" />
             </svg>
         </figure>

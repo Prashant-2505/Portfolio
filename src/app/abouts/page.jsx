@@ -1,13 +1,14 @@
 'use client'
 import AnimatedText from '@/components/AnimatedText'
 import Head from 'next/head'
-import React, { useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import arrow from '../../../public/icons/down_arrow.gif'
 import SKills from '@/components/SKills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
+import ThemeContext from '../context'
 
 const Page = () => {
     const text = {
@@ -29,6 +30,10 @@ const Page = () => {
         }
     };
 
+
+    const { theme } = useContext(ThemeContext);
+
+
     return (
         <>
             <Head>
@@ -36,9 +41,9 @@ const Page = () => {
                 <meta name="description" content="--" />
             </Head>
 
-            <main className='h-full w-full flex flex-col items-center justify-center p-5 mt-[7rem]'>
+            <main className={`h-full w-full flex flex-col items-center justify-center p-5 mt-[6rem] ${!theme ? 'bg-[#2c3e50] text-white' : ''}`}>
                 <AnimatedText
-                    className='!text-5xl text-center'
+                    className={`!text-5xl text-center ${!theme ? '!text-white' : ''}`}
                     text="Let Me Tell You More About Me"
                 />
 
@@ -60,7 +65,7 @@ const Page = () => {
 
                 <Image src={arrow}
                     onClick={scrollToSkills}
-                    className=' h-[3rem] w-[3rem] mt-[5rem] hover:cursor-pointer'
+                    className={`h-[3rem] w-[3rem] mt-[5rem] hover:cursor-pointer ${!theme ? 'bg-white rounded-full' : ''}`}
                 />
 
                 {/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}

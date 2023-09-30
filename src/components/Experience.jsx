@@ -1,6 +1,7 @@
-import React, { useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import LiIcons from './LiIcons'
+import ThemeContext from '@/app/context'
 
 const Details = ({ position, company, time, address, work }) => {
 
@@ -37,10 +38,15 @@ const Experience = () => {
     });
 
 
+    const { theme } = useContext(ThemeContext);
+
+
+
+
     return (
 
 
-        <div className=" my-[12rem] text-center">
+        <div className={`my-[12rem] text-center ${theme ?'text-[#2c3e50]':'text-white'}`}>
             <h2 className='font-bold text-5xl mb-32'>Experience</h2>
 
             <div
@@ -49,7 +55,7 @@ const Experience = () => {
 
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className='absolute left-8 top-0 w-[4px] h-full bg-black origin-top ' />
+                    className={`absolute left-8 top-0 w-[4px] h-full ${theme ? 'bg-[#2c3e50]':'bg-white'} origin-top `} />
                 <ul className="w-[70vw] flex flex-col items-start justify-between">
                     <Details
                         company="GSSOC"
