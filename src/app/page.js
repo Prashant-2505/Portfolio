@@ -5,7 +5,7 @@ import profile from '../../public/images/profile.png'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { BsFillArrowDownCircleFill } from 'react-icons/bs'
-import { useThemeContext } from './context/Theme'
+import { useThemeContext } from './context/theme'
 
 export default function Home() {
 
