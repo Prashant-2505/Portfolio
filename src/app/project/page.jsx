@@ -14,11 +14,10 @@ const Page = () => {
 
   return (
     <div className={`w-full mt-[6rem] text-center justify-center items-center ${!theme ? 'bg-[#2c3e50] text-white' : 'text-[#2c3e50]'}`}>
-      <AnimatedText 
-      
-      className='font-bold text-7xl inline-block px-32 leading-relaxed'>
-        Imagination Trumps Knowledge!
-      </AnimatedText>
+       <AnimatedText 
+       className={`font-bold text-7xl inline-block !px-32 leading-relaxed text-center ${!theme ? 'text-white':''}`}
+       text='Imagination Trumps Knowledge !'
+       />
       <div className="grid h-full grid-cols-2 gap-9 place-items-center py-[5rem]">
         {/* Project 1 */}
         <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]' : ''}`}>
