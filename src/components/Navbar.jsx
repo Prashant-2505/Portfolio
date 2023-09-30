@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { BsLinkedin, BsGithub,BsFillSunFill,BsFillMoonStarsFill } from 'react-icons/bs'
 import { SiHackerrank } from 'react-icons/si'
 import { motion } from 'framer-motion'
-import ThemeContext, { useThemeContext } from '@/app/context/theme';
+import  { useThemeContext } from '@/app/context/theme';
 
 
 
