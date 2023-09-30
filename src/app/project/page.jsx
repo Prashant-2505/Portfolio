@@ -7,15 +7,18 @@ import { useThemeContext } from '../context/theme';
 import demo from '../../../public/images/profile.png';
 import project1 from '../../../public/images/project1.png';
 import project2 from '../../../public/images/project2.png';
+import AnimatedText from '@/components/AnimatedText';
 
 const Page = () => {
   const { theme } = useThemeContext();
 
   return (
     <div className={`w-full mt-[6rem] text-center justify-center items-center ${!theme ? 'bg-[#2c3e50] text-white' : 'text-[#2c3e50]'}`}>
-      <h1 className='font-bold text-7xl inline-block px-32 leading-relaxed'>
+      <AnimatedText 
+      
+      className='font-bold text-7xl inline-block px-32 leading-relaxed'>
         Imagination Trumps Knowledge!
-      </h1>
+      </AnimatedText>
       <div className="grid h-full grid-cols-2 gap-9 place-items-center py-[5rem]">
         {/* Project 1 */}
         <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]' : ''}`}>
@@ -33,7 +36,7 @@ const Page = () => {
             </Link>
           </div>
         </div>
-        
+
         {/* Project 2 */}
         <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]' : ''}`}>
           <Image className='h-[40vh] w-full' src={project2} />
@@ -50,7 +53,7 @@ const Page = () => {
             </Link>
           </div>
         </div>
-        
+
         {/* Project 3 */}
         <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]' : ''}`}>
           <Image className='h-[40vh] w-full' src={demo} />
