@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`w-full h-full inline-block z-0 bg-[#f5f6fa] `}>
+      <body className={`w-full h-full inline-block z-0 bg-[#f7f1e3] `}>
         <Navbar/>
         {children}
         <Footer/>

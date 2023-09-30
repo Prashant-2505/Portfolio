@@ -6,7 +6,7 @@ import { BsFillArrowDownCircleFill } from 'react-icons/bs'
 
 export default function Home() {
   return (
-    <main className="flex min-h-[100%] w-full  items-center justify-between mt-[7rem] bg-[#f5f6fa]">
+    <main className="flex min-h-[100%] w-full  items-center justify-between mt-[7rem] ">
       <div className=" w-[50%] h-[80vh] flex justify-center items-center">
         <Image className='h-[70%] w-[80%]' src={profile} alt='Prashant' />
       </div>

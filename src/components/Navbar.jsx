@@ -28,7 +28,7 @@ const CustomLink = ({ href, title, className }) => {
 
 const Navbar = () => {
     return (
-        <div className='w-full px-32 py-8 font-medium flex items-center justify-between fixed top-0 z-40 bg-[#f5f6fa] text-black'>
+        <div className='w-full px-32 py-8 font-medium flex items-center justify-between fixed top-0 z-40 bg-[#f7f1e3] text-black'>
             <nav>
                 <CustomLink className='mr-4' href="/" title="Home" />
                 <CustomLink className='mx-4' href="/abouts" title="About" />
