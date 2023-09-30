@@ -48,7 +48,7 @@ const Navbar = () => {
                 <motion.a
                     whileHover={{ y: -3 }}
                     whileTap={{scale:0.9}}
-                    href='https://www.linkedin.com'
+                    href='https://www.linkedin.com/in/prashant-sharma-ab9b0a209/'
                     target='_blank'
                     className='text-3xl text-blue-500'
                 >
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <motion.a
                     whileHover={{ y: -3 }}
                     whileTap={{scale:0.9}}
-                    href='https://www.github.com'
+                    href='https://github.com/Prashant-2505'
                     target='_blank'
                     className='text-3xl'
                 >
@@ -66,7 +66,7 @@ const Navbar = () => {
                 <motion.a
                     whileHover={{ y: -3 }}
                     whileTap={{scale:0.9}}
-                    href='https://www.github.com'
+                    href='https://www.hackerrank.com/sharmaprashant23'
                     target='_blank'
                     className='text-3xl text-green-500'
                 >
