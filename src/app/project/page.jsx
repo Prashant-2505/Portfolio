@@ -7,6 +7,7 @@ import { useThemeContext } from '../context/theme';
 import demo from '../../../public/images/profile.png';
 import project1 from '../../../public/images/project1.png';
 import project2 from '../../../public/images/project2.png';
+import project3 from '../../../public/images/project3.png';
 import AnimatedText from '@/components/AnimatedText';
 
 const Page = () => {
@@ -55,7 +56,7 @@ const Page = () => {
 
         {/* Project 3 */}
         <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-white text-[#2c3e50]' : ''}`}>
-          <Image className='h-[40vh] w-full' src={demo} />
+          <Image className='h-[40vh] w-full' src={project3} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>WearAble</h1>
           <p className='my-3 font-base text-left'>
             WearAble is a dynamic ecommerce clothing web application, meticulously developed using a powerful technology stack comprising MongoDB, React, Node.js, and Express.js. This platform offers users a secure and seamless shopping experience for a diverse range of clothing items.
