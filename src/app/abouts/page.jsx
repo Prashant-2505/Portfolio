@@ -41,16 +41,16 @@ const Page = () => {
                 <meta name="description" content="--" />
             </Head>
 
-            <main className={`  h-full w-full flex flex-col items-center justify-center p-5 mt-[5rem]${!theme ? 'bg-[#2c3e50] text-white' : ''}
+            <main className={`  h-full w-full flex flex-col items-center justify-center p-5 pt-[15vh] mt-[5rem] ${!theme ? 'bg-[#2c3e50] text-white' : ''}
              sm:pt-5 
              md:pt-[6rem]
-             lg:pt-[8rem]
+             
             `}>
                 <AnimatedText
                     className={`!text-5xl  text-center 
                      sm:!text-left sm:!text-md
                      md:!text-6xl
-                     lg:!text-7xl
+                     lg:!text-8xl
                     ${!theme ? '!text-[#f7f1e3]' : ''}`}
                     text="Let Me Tell You More About Me"
                 />
