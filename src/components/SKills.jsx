@@ -37,7 +37,11 @@ const Skills = ({skillsRef}) => {
 
 
     return (
-        <div className='w-full h-[100vh] pt-[13vh]' ref={skillsRef}>
+        <div className='w-full h-[100vh] pt-[13vh]
+       
+        '
+        
+        ref={skillsRef}>
             <AnimatedText
                 className={`!text-5xl text-center ${!theme ? 'text-[#f7f1e3]':''}`}
                 text="Skills"

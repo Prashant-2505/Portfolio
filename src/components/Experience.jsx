@@ -46,7 +46,9 @@ const Experience = () => {
     return (
 
 
-        <div className={`my-[12rem] text-center ${theme ? 'text-[#2c3e50]' : 'text-[#f7f1e3]'}`}>
+        <div className={`my-[12rem] text-center ${theme ? 'text-[#2c3e50]' : 'text-[#f7f1e3]'}
+        sm:my-[1rem]
+        `}>
             <h2 className='font-bold text-5xl mb-32'>Experience</h2>
 
             <div

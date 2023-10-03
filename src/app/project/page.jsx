@@ -14,17 +14,31 @@ const Page = () => {
   const { theme } = useThemeContext();
 
   return (
-    <div className={`w-full mt-[5rem] text-center justify-center items-center ${!theme ? 'bg-[#2c3e50] text-[#f7f1e3]' : 'text-[#2c3e50]'}`}>
+    <div className={`w-full mt-[5rem] text-center justify-center items-center ${!theme ? 'bg-[#2c3e50] text-[#f7f1e3]' : 'text-[#2c3e50]'}
+    `}>
        <AnimatedText 
-       className={`font-bold text-7xl inline-block !px-32 leading-relaxed text-center ${!theme ? 'text-[#f7f1e3]':''}`}
+       className={`font-bold text-7xl inline-block !px-32 leading-relaxed text-center ${!theme ? 'text-[#f7f1e3]':''}
+        sm:!text-4xl sm:text-center sm:!px-0
+        md:!text-6xl
+        lg:!text-6xl
+
+       `}
        text='Imagination Trumps Knowledge !'
        />
-      <div className="grid h-full grid-cols-2 gap-9 place-items-center py-[5rem]">
+      <div className="grid h-full grid-cols-2 gap-9 place-items-center py-[5rem]
+       sm:block sm:w-full sm:h-full sm:px-3
+       md:gap-6 md:py-3
+      ">
 
 
         {/* Project 1 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}`}>
-          <Image className='h-[40vh] w-full' src={project1} />
+        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}
+         sm:w-full sm:h-[60%] sm:px-3
+         md:h-[70%]
+        `}>
+          <Image className='h-[40vh] w-full
+           sm:h-[40%]
+          ' src={project1} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>Travellers</h1>
           <p className='my-3 font-base text-left'>
             I have designed and developed a user-friendly web application aimed at travel enthusiasts seeking budget-friendly travel packages across various destinations in India. Leveraging cutting-edge technologies such as React.js, Firebase, and Google authorization, the platform offers a seamless booking experience.
@@ -40,8 +54,15 @@ const Page = () => {
         </div>
 
         {/* Project 2 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}`}>
-          <Image className='h-[40vh] w-full' src={project2} />
+        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}
+         sm:w-full sm:h-[60%] sm:px-3
+         md:h-[70%]
+
+        `}>
+          <Image className='h-[40vh] w-full
+           sm:h-[40%]
+          '
+           src={project2} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>Vidiscape</h1>
           <p className='my-3 font-base text-left'>
             I developed VIDISCAPE, a YouTube clone web application meticulously crafted using React.js and Material-UI. This project aims to replicate the core functionalities of YouTube, allowing users to watch videos fetched from the YouTube API and presented through a visually appealing and user-friendly interface.
@@ -57,8 +78,15 @@ const Page = () => {
         </div>
 
         {/* Project 3 */}
-        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}`}>
-          <Image className='h-[40vh] w-full' src={project3} />
+        <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}
+        sm:w-full sm:h-[60%] sm:px-3
+        md:h-[70%]
+
+        `}>
+          <Image className='h-[40vh] w-full
+           sm:h-[40%]'
+          
+          src={project3} />
           <h1 className='mt-5 font-bold text-2xl capitalize'>WearAble</h1>
           <p className='my-3 font-base text-left'>
             WearAble is a dynamic ecommerce clothing web application, meticulously developed using a powerful technology stack comprising MongoDB, React, Node.js, and Express.js. This platform offers users a secure and seamless shopping experience for a diverse range of clothing items.
