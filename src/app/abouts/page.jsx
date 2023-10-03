@@ -49,8 +49,8 @@ const Page = () => {
                 <AnimatedText
                     className={`
                         text-5xl text-center 
-                        sm:!text-4xl
-                        md:!!text-6xl
+                        sm:!text-xl
+                        md:!text-6xl
                         lg:text-8xl
     ${!theme ? 'text-[#f7f1e3]' : ''}
   `}
