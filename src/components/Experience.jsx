@@ -7,7 +7,10 @@ const Details = ({ position, company, time, address, work }) => {
 
     const ref = useRef()
 
-    return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+    return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between
+    sm:w-full
+    md:w-full
+    '>
         <LiIcons reference={ref} 
           className=""
         />
@@ -48,8 +51,9 @@ const Experience = () => {
     return (
 
 
-        <div className={`my-[12rem] text-center ${theme ? 'text-[#2c3e50]' : 'text-[#f7f1e3]'}
+        <div className={` border-[3px] w-full h-full border-red-900 my-[12rem] text-center ${theme ? 'text-[#2c3e50]' : 'text-[#f7f1e3]'}
         sm:my-[1rem] sm:text-left sm:w-full
+       
         `}>
             <h2 className='font-bold text-5xl mb-32 text-center'>Experience</h2>
 
@@ -57,16 +61,19 @@ const Experience = () => {
                 ref={ref}
                 className="w-[75%] mx-auto relative
                 sm:w-full
+                md:w-full
                 ">
 
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
                     className={`absolute left-8 top-0 w-[4px] h-full ${theme ? 'bg-[#2c3e50]' : 'bg-white'} origin-top 
                     sm:hidden 
+                    md:hidden
                     `} />
 
-                <ul className="w-[70vw] flex flex-col items-start justify-between
-                sm:w-full sm:p-0 sm:m-0
+                <ul className="flex flex-col items-start justify-between
+                sm:w-full sm:p-0 sm:m-0 border-[5px]
+                 border-blue-500
                 ">
                     <Details
                         company="GSSOC"
