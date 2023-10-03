@@ -51,7 +51,7 @@ const Experience = () => {
     return (
 
 
-        <div className={` border-[3px] w-full h-full border-red-900 my-[12rem] text-center ${theme ? 'text-[#2c3e50]' : 'text-[#f7f1e3]'}
+        <div className={`  w-full h-full  my-[12rem] text-center ${theme ? 'text-[#2c3e50]' : 'text-[#f7f1e3]'}
         sm:my-[1rem] sm:text-left sm:w-full
        
         `}>
@@ -72,8 +72,8 @@ const Experience = () => {
                     `} />
 
                 <ul className="flex flex-col items-start justify-between
-                sm:w-full sm:p-0 sm:m-0 border-[5px]
-                 border-blue-500
+                sm:w-full sm:p-0 sm:m-0 
+                 
                 ">
                     <Details
                         company="GSSOC"
