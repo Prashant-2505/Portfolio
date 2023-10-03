@@ -47,44 +47,49 @@ const Page = () => {
              
             `}>
                 <AnimatedText
-                    className={`!text-5xl  text-center 
-                     sm:!text-left sm:!text-md
-                     md:!text-6xl
-                     lg:!text-8xl
-                    ${!theme ? '!text-[#f7f1e3]' : ''}`}
+                    className={`
+                        text-5xl text-center 
+                        sm:!text-4xl
+                        md:!!text-6xl
+                        lg:text-8xl
+    ${!theme ? 'text-[#f7f1e3]' : ''}
+  `}
                     text="Let Me Tell You More About Me"
                 />
+
 
                 <motion.p
                     variants={text}
                     initial="initial"
                     animate="animate"
                     className='text-xl text-center font-normal mt-3 p-4 
-                    sm:text-left sm:pb-0
+                    sm:text-left sm:pb-0 sm:!text-[1.2rem]
                     md:text-[1.4rem] md:pt-9
                     lg:text-[1.5rem] lg:pt-12
                     ' >
-                        
+
                     Hello! I'm Prashant Sharma, a passionate web developer with a knack for turning ideas into interactive and efficient web applications. My journey in the world of web development has equipped me with a diverse skill set that spans both front-end and back-end technologies. I take pride in creating seamless digital experiences that not only look great but also function flawlessly.
                 </motion.p>
+
                 <motion.p
                     variants={text}
                     initial="initial"
                     animate="animate"
-                    className='text-xl text-center font-normal mt-3 p-4
-                    sm:text-left sm:pb-0
+                    className='text-xl text-center font-normal mt-3 p-4 
+                    sm:text-left sm:pb-0 sm:!text-[1.2rem]
                     md:text-[1.4rem] md:pt-9
                     lg:text-[1.5rem] lg:pt-12
-
                     ' >
+                    I have a strong affinity for problem-solving, and I enjoy tackling algorithmic challenges on platforms like LeetCode and GeeksforGeeks. Whether it's optimizing code or finding elegant solutions to complex problems, I'm always up for the challenge.
 
-                    I have a strong affinity for problem-solving, and I enjoy tackling algorithmic challenges on platforms like LeetCode and GeeksforGeeks. Whether it's optimizing code or finding elegant solutions to complex problems, I'm always up for the challenge.                </motion.p>
+                </motion.p>
+
 
 
                 <Image src={arrow}
                     onClick={scrollToSkills}
                     className={`h-[3rem] w-[3rem] mt-[5rem] hover:cursor-pointer ${!theme ? 'bg-white rounded-full' : ''}
-                    sm:mt-3
+                    sm:hidden
                     md:h-[5rem] md:w-[5rem]
                     lg:h-[6.5rem] lg:w-[6.5rem]
 
