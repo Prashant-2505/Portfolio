@@ -12,7 +12,7 @@ export default function Home() {
   const { theme } = useThemeContext()
 
   return (
-    <main className={`flex h-full w-full  items-center justify-between mt-[5rem]  lg:flex-col lg:pt-9   ${theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : 'bg-[#2c3e50] text-[#f7f1e3]'}`}>
+    <main className={`flex h-[100vh] w-full  items-center justify-between mt-[5rem]  lg:flex-col lg:pt-9   ${theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : 'bg-[#2c3e50] text-[#f7f1e3]'}`}>
       <div className=" w-[50%] h-[80vh] md:w-[80%]  md:h-[50vh] lg:w-[100%] lg:h-[60%] flex justify-center items-center  md:inline-block">
         <Image
           priority={true}
@@ -23,17 +23,18 @@ export default function Home() {
            ' src={profile} alt='Prashant' />
       </div>
 
-      <div className=" w-[50%] h-[80%] p-5 flex flex-col items-center self-center text-left lg:w-full lg:text-center lg:pt-0 lg:mt-0 sm:p-0">
-      <AnimatedText
-  text="Turning Vision Into Reality With Code And Design"
-  className='
+      <div className={`w-[50%] h-[80%] p-5 flex flex-col items-center self-center text-left lg:w-full lg:text-center lg:pt-0 lg:mt-0 sm:p-0 `}>
+        <AnimatedText
+          text="Turning Vision Into Reality With Code And Design"
+          className={`
+          ${theme ? ' text-[#2c3e50]' : ' text-[#f7f1e3]'}
                text-2xl
                sm:text-3xl
                md:text-5xl 
-               lg:text-6xl lg:text-center
-               xl:text-6xl
-               '
-/>
+               lg:text-5xl lg:text-center
+               xl:text-5xl
+               `}
+        />
 
 
 

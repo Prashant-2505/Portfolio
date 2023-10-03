@@ -26,7 +26,7 @@ const Page = () => {
        text='Imagination Trumps Knowledge !'
        />
       <div className="grid h-full grid-cols-2 gap-9 place-items-center py-[5rem]
-       sm:block sm:w-full sm:h-full sm:px-3
+       sm:block sm:w-full sm:h-full sm:px-3 sm:space-y-5
        md:gap-6 md:py-3
       ">
 
