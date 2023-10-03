@@ -8,7 +8,9 @@ const Details = ({ position, company, time, address, work }) => {
     const ref = useRef()
 
     return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
-        <LiIcons reference={ref} />
+        <LiIcons reference={ref} 
+          className=""
+        />
         <motion.div
             initial={{ y: 50 }}
             whileInView={{ y: 0 }}
@@ -47,18 +49,25 @@ const Experience = () => {
 
 
         <div className={`my-[12rem] text-center ${theme ? 'text-[#2c3e50]' : 'text-[#f7f1e3]'}
-        sm:my-[1rem]
+        sm:my-[1rem] sm:text-left sm:w-full
         `}>
-            <h2 className='font-bold text-5xl mb-32'>Experience</h2>
+            <h2 className='font-bold text-5xl mb-32 text-center'>Experience</h2>
 
             <div
                 ref={ref}
-                className="w-[75%] mx-auto relative">
+                className="w-[75%] mx-auto relative
+                sm:w-full
+                ">
 
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className={`absolute left-8 top-0 w-[4px] h-full ${theme ? 'bg-[#2c3e50]' : 'bg-white'} origin-top `} />
-                <ul className="w-[70vw] flex flex-col items-start justify-between">
+                    className={`absolute left-8 top-0 w-[4px] h-full ${theme ? 'bg-[#2c3e50]' : 'bg-white'} origin-top 
+                    sm:hidden 
+                    `} />
+
+                <ul className="w-[70vw] flex flex-col items-start justify-between
+                sm:w-full sm:p-0 sm:m-0
+                ">
                     <Details
                         company="GSSOC"
                         position="Contributor"

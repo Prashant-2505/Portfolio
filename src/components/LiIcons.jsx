@@ -15,7 +15,7 @@ const LiIcons = ({reference}) => {
     )
 
     return (
-        <figure className={`absolute -left-5 ${theme ? 'stroke-[#2c3e50]':'stroke-white'}`}>
+        <figure className={`absolute -left-5 ${theme ? 'stroke-[#2c3e50]':'stroke-white'} sm:hidden`}>
             <svg width="75" height="75" viewBox='0 0 100 100'>
                 <circle className='stroke-pink-400 stroke-1 fill-none' cx="75" cy="50" r="20" />
                 <motion.circle
