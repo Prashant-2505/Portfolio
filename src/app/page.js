@@ -28,7 +28,7 @@ export default function Home() {
           text="Turning Vision Into Reality With Code And Design"
           className={`
           ${theme ? ' text-[#2c3e50]' : ' text-[#f7f1e3]'}
-               text-2xl
+               text-5xl
                sm:text-3xl
                md:text-5xl 
                lg:text-5xl lg:text-center
