@@ -90,8 +90,8 @@ const Page = () => {
                     onClick={scrollToSkills}
                     className={`h-[3rem] w-[3rem] mt-[5rem] hover:cursor-pointer ${!theme ? 'bg-white rounded-full' : ''}
                     sm:hidden
-                    md:h-[5rem] md:w-[5rem]
-                    lg:h-[6.5rem] lg:w-[6.5rem]
+                    md:h-[5rem] md:w-[5rem] md:hidden 
+                    lg:h-[6.5rem] lg:w-[6.5rem] lg:hidden
 
                     `}
                 />
