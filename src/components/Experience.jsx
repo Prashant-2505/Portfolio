@@ -82,13 +82,7 @@ const Experience = () => {
                         address="Remote"
                         work="Contributed to diverse web development projects in the GirlScript Summer of Code program, collaborating on React, Firebase, and Bootstrap projects to build dynamic and responsive user interfaces, showcasing strong problem-solving skills in a fast-paced, collaborative environment."
                     />
-                    <Details
-                        company="ECOMPARADISE"
-                        position="Frontend Developer Intern"
-                        time="January'2023 - March'2023"
-                        address="New Delhi"
-                        work="Developed engaging, user-friendly landing pages and functional components as a Frontend Developer, utilizing HTML, CSS, and JavaScript, showcasing strong problem-solving skills and adaptability to changing project requirements."
-                    />
+                    
 
                 </ul>
             </div>
