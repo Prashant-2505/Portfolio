@@ -4,10 +4,11 @@ import Image from 'next/image';
 import { BsGithub } from 'react-icons/bs';
 import Link from 'next/link';
 import { useThemeContext } from '../context/theme';
-import demo from '../../../public/images/profile.png';
 import project1 from '../../../public/images/project1.png';
 import project2 from '../../../public/images/project2.png';
 import project3 from '../../../public/images/project3.png';
+import project4 from '../../../public/images/project4.png';
+
 import AnimatedText from '@/components/AnimatedText';
 
 const Page = () => {
@@ -96,6 +97,31 @@ const Page = () => {
               <button className='bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
             </Link>
             <Link href={'https://github.com/Prashant-2505/wearAble'} target='_blank'>
+              <BsGithub className='text-4xl cursor-pointer' />
+            </Link>
+          </div>
+        </div>
+
+
+          {/* Project 4 */}
+          <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}
+        sm:w-full sm:h-[60%] sm:px-3
+        md:h-[70%]
+
+        `}>
+          <Image className='h-[40vh] w-full
+           sm:h-[40%]'
+          
+          src={project4} />
+          <h1 className='mt-5 font-bold text-2xl capitalize'>ElectroMart</h1>
+          <p className='my-3 font-base text-left'>
+             ElectroMart is a dynamic ecommerce Electroninc web application, meticulously developed using a powerful technology stack comprising  Next js, MongoDB. This platform offers users a secure and seamless shopping experience for a diverse range of Electronic items.
+          </p>
+          <div className='text-left flex items-center space-x-10 my-4'>
+            <Link href={'https://electro-mart.vercel.app/'} target='_blank'>
+              <button className='bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
+            </Link>
+            <Link href={'https://github.com/Prashant-2505/electroMart'} target='_blank'>
               <BsGithub className='text-4xl cursor-pointer' />
             </Link>
           </div>
