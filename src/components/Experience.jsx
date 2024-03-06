@@ -76,6 +76,14 @@ const Experience = () => {
                  
                 ">
                     <Details
+                        company="KalaGrafix"
+                        position="Frontend developer"
+                        time="Sepetember'2023 - Present"
+                        address="Remote"
+                        work="In my role at the company, I have developed and designed templates using HTML, CSS, and JavaScript, showcasing my strong front-end skills. Utilizing React, I have created responsive and visually appealing websites to enhance user experiences. My work reflects a proficiency in web development, where I consistently implement efficient and dynamic solutions. Through my contributions, I have played a key role in the company's success by delivering high-quality front-end solutions and consistently meeting project requirements.
+                        "
+                    />
+                     <Details
                         company="GSSOC"
                         position="Contributor"
                         time="May'2023 - August'2023"
