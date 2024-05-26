@@ -9,6 +9,8 @@ import project2 from '../../../public/images/project2.png';
 import project3 from '../../../public/images/project3.png';
 import project4 from '../../../public/images/project4.png';
 import project5 from '../../../public/images/project5.png';
+import project6 from '../../../public/images/project6.png';
+
 
 import AnimatedText from '@/components/AnimatedText';
 
@@ -127,7 +129,7 @@ const Page = () => {
         </div>
 
 
-        {/* Project 4 */}
+        {/* Project 5 */}
         <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}
         sm:w-full sm:h-[60%] sm:px-3
         md:h-[70%]
@@ -146,6 +148,29 @@ const Page = () => {
               <button className='bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
             </Link>
             <Link href={'https://github.com/Prashant-2505/electroMart'} target='_blank'>
+              <BsGithub className='text-4xl cursor-pointer' />
+            </Link>
+          </div>
+        </div>
+
+         {/* Project 6 */}
+         <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}
+        sm:w-full sm:h-[60%] sm:px-3
+        md:h-[70%]
+
+        `}>
+          <Image className='h-[40vh] w-full
+           sm:h-[40%]'
+
+            src={project6} />
+          <h1 className='mt-5 font-bold text-2xl capitalize'>ProjectNest</h1>
+          <p className='my-3 font-base text-left'>
+          Developed "Project Nest," a central hub for efficient project management and teamwork, using Next.js, Node.js, MongoDB, and Tailwind CSS. Integrated JWT and Firebase for Google authentication, enabling team collaboration features like chat, task assignment, and member management. Technologies used include Next.js, Node.js, Firebase, Tailwind CSS, MongoDB, Socket.IO, and Chakra UI.          </p>
+          <div className='text-left flex items-center space-x-10 my-4'>
+            <Link href={'https://yabbering-lorelei-nq-3d0e2f51.koyeb.app/'} target='_blank'>
+              <button className='bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
+            </Link>
+            <Link href={'https://github.com/Prashant-2505/projectNest'} target='_blank'>
               <BsGithub className='text-4xl cursor-pointer' />
             </Link>
           </div>
