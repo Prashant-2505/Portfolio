@@ -16,13 +16,13 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useThemeContext } from '@/app/context/theme';
 
-const Skills = ({skillsRef}) => {
+const Skills = ({ skillsRef }) => {
 
-    const {theme} = useThemeContext()
+    const { theme } = useThemeContext()
 
     const skills = `
-        h-[4rem] 
-        w-[4rem]  
+        h-[5rem] 
+        w-[5rem]  
         bg-gray-300 
         px-3
         py-3
@@ -37,13 +37,13 @@ const Skills = ({skillsRef}) => {
 
 
     return (
-        <div className='w-full h-[100vh] pt-[13vh]
+        <div className='w-full min-h-[100vh] my-4 pt-[13vh]
        
         '
-        
-        ref={skillsRef}>
+
+            ref={skillsRef}>
             <AnimatedText
-                className={`!text-5xl text-center ${!theme ? 'text-[#f7f1e3]':''}`}
+                className={`!text-5xl text-center ${!theme ? 'text-[#f7f1e3]' : ''}`}
                 text="Skills"
             />
             <motion.div
@@ -56,85 +56,135 @@ const Skills = ({skillsRef}) => {
                 }}
                 className="w-full relative flex flex-col items-center justify-center rounded-full "
             >
-                <div className="w-full flex flex-col items-center justify-between pt-5">
-                    <motion.div
-                        whileHover={{ scale: 1.3 }}
+                <motion.div
+                    whileHover={{ scale: 1.3 }}
+                    className="w-full flex flex-col items-center justify-between pt-5">
+                    <div
+
                         className={skills}
                     >
                         <Image src={react} alt="React" />
+                    </div>
+                    <p className=' font-semibold'>React js</p>
+                </motion.div>
+
+                {/* bootstrap taiwind */}
+                <div className="w-[50%] flex items-center justify-evenly pt-5 text-center">
+                    <motion.div
+                        whileHover={{ scale: 1.3 }}
+                    >
+                        <div
+                            className={skills}
+                        >
+                            <Image src={bootstrap} alt="Bootstrap" />
+                        </div>
+                        <p>Bootstrap</p>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.3 }}
+                    >
+                        <div
+                            className={skills}
+                        >
+                            <Image src={tailwind} alt="Firebase" />
+                        </div>
+                        <p>Tailwind css</p>
                     </motion.div>
                 </div>
 
-                <div className="w-[50%] flex items-center justify-evenly pt-5">
+
+                {/* js,mongo...next */}
+                <div className="w-full flex items-center justify-evenly pt-5 text-center">
                     <motion.div
                         whileHover={{ scale: 1.3 }}
-                        className={skills}
                     >
-                        <Image src={bootstrap} alt="Bootstrap" />
+                        <div
+                            className={skills}
+                        >
+                            <Image src={js} alt="Firebase" />
+                        </div>
+                        <p>Javascript</p>
                     </motion.div>
                     <motion.div
                         whileHover={{ scale: 1.3 }}
-                        className={skills}
                     >
-                        <Image src={tailwind} alt="Tailwind CSS" />
-                    </motion.div>
-                </div>
-                
-                <div className="w-full flex items-center justify-evenly pt-5 ">
-                    <motion.div
-                        whileHover={{ scale: 1.3 }}
-                        className={skills}
-                    >
-                        <Image src={js} alt="JavaScript" />
+                        <div
+                            className={skills}
+                        >
+                            <Image src={mongo} alt="Firebase" />
+                        </div>
+                        <p>Mongo DB</p>
                     </motion.div>
                     <motion.div
                         whileHover={{ scale: 1.3 }}
-                        className={skills}
                     >
-                        <Image src={mongo} alt="MongoDB" />
+                        <div
+                            className={skills}
+                        >
+                            <Image src={sql} alt="Firebase" />
+                        </div>
+                        <p>SQL</p>
                     </motion.div>
                     <motion.div
                         whileHover={{ scale: 1.3 }}
-                        className={skills}
                     >
-                        <Image src={sql} alt="SQL" />
+                        <div
+                            className={skills}
+                        >
+                            <Image src={firebase} alt="Firebase" />
+                        </div>
+                        <p>Firebase</p>
                     </motion.div>
                     <motion.div
                         whileHover={{ scale: 1.3 }}
-                        className={skills}
                     >
-                        <Image src={firebase} alt="Firebase" />
-                    </motion.div>
-                    <motion.div
-                        whileHover={{ scale: 1.3 }}
-                        className={skills}
-                    >
-                        <Image src={next} alt="Next.js" />
+                        <div
+                            className={skills}
+                        >
+                            <Image src={next} alt="Next.js" />
+                        </div>
+                        <p>Next js</p>
                     </motion.div>
                 </div>
 
-                <div className="w-[50%] flex items-center justify-evenly pt-5">
+
+                {/* node,express */}
+                <div className="w-[50%] flex items-center justify-evenly pt-5 text-center">
                     <motion.div
                         whileHover={{ scale: 1.3 }}
-                        className={skills}
                     >
-                        <Image src={node} alt="Node.js" />
+                        <div
+
+                            className={skills}
+                        >
+                            <Image src={node} alt="Node.js" />
+                        </div>
+                        <p>Node js</p>
                     </motion.div>
                     <motion.div
                         whileHover={{ scale: 1.3 }}
-                        className={skills}
                     >
-                        <Image src={express} alt="Express.js" />
+                        <div
+                            className={skills}
+                        >
+                            <Image src={express} alt="Express.js" />
+                        </div>
+                        <p>Express js</p>
                     </motion.div>
                 </div>
-                <div className="flex items-center justify-evenly pt-5 ">
-                    <motion.div
-                        whileHover={{ scale: 1.3 }}
-                        className={skills}
-                    >
+
+
+                {/* c++ */}
+                <motion.div
+                    whileHover={{ scale: 1.3 }}
+
+                    className="flex flex-col items-center justify-evenly pt-5 ">
+                    <div >
                         <Image src={c} alt="C++" />
-                    </motion.div>
-                </div>
+                    </div>
+                    <p>C++</p>
+                </motion.div>
+
             </motion.div>
         </div>
     );
