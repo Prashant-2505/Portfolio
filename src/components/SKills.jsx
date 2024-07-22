@@ -21,8 +21,8 @@ const Skills = ({ skillsRef }) => {
     const { theme } = useThemeContext()
 
     const skills = `
-        h-[5rem] 
-        w-[5rem]  
+        h-[4rem] 
+        w-[4rem]  
         bg-gray-300 
         px-3
         py-3
@@ -58,15 +58,15 @@ const Skills = ({ skillsRef }) => {
             >
                 <motion.div
                     whileHover={{ scale: 1.3 }}
-                    className="w-full flex flex-col items-center justify-between pt-5">
-                    <div
 
-                        className={skills}
-                    >
-                        <Image src={react} alt="React" />
+                    className="flex flex-col items-center justify-evenly pt-5 ">
+                    <div >
+                        <Image src={react} alt="react js" />
                     </div>
-                    <p className=' font-semibold'>React js</p>
+                    <p>React js</p>
                 </motion.div>
+
+
 
                 {/* bootstrap taiwind */}
                 <div className="w-[50%] flex items-center justify-evenly pt-5 text-center">
