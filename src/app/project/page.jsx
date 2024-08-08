@@ -10,6 +10,7 @@ import project3 from '../../../public/images/project3.png';
 import project4 from '../../../public/images/project4.png';
 import project5 from '../../../public/images/project5.png';
 import project6 from '../../../public/images/project6.png';
+import newProject from '../../../public/images/newProject.png';
 
 
 import AnimatedText from '@/components/AnimatedText';
@@ -52,6 +53,29 @@ const Page = () => {
               <button className='bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
             </Link>
             <Link href={'https://github.com/Prashant-2505/travelers'} target='_blank'>
+              <BsGithub className='text-4xl cursor-pointer' />
+            </Link>
+          </div>
+        </div>
+
+         {/* Project * */}
+         <div className={`h-[100%] w-[40vw] flex flex-col p-6 shadow-2xl rounded-md shadow-[#5c4f30] ${!theme ? 'bg-[#f7f1e3] text-[#2c3e50]' : ''}
+        sm:w-full sm:h-[60%] sm:px-3
+        md:h-[70%]
+
+        `}>
+          <Image className='h-[40vh] w-full
+           sm:h-[40%]'
+
+            src={newProject} />
+          <h1 className='mt-5 font-bold text-2xl capitalize'>Quicky</h1>
+          <p className='my-3 font-base text-left'>
+           QUICKY application is impressive for its simplicity and ease of use, allowing users to start chatting instantly without login. Its anonymous nature encourages open communication, while the lack of chat history protects privacy and reduces storage needs. The real-time focus ensures engaging and dynamic conversations.          </p>
+          <div className='text-left flex items-center space-x-10 my-4'>
+            <Link href={'https://quick-chat-client-eight.vercel.app/'} target='_blank'>
+              <button className='bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
+            </Link>
+            <Link href={'https://github.com/Prashant-2505/quick-chat-client'} target='_blank'>
               <BsGithub className='text-4xl cursor-pointer' />
             </Link>
           </div>
