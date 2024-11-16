@@ -191,7 +191,7 @@ const Page = () => {
           <p className='my-3 font-base text-left'>
           Developed "Project Nest," a central hub for efficient project management and teamwork, using Next.js, Node.js, MongoDB, and Tailwind CSS. Integrated JWT and Firebase for Google authentication, enabling team collaboration features like chat, task assignment, and member management. Technologies used include Next.js, Node.js, Firebase, Tailwind CSS, MongoDB, Socket.IO, and Chakra UI.          </p>
           <div className='text-left flex items-center space-x-10 my-4'>
-            <Link href={'https://projectnest-k17d.onrender.com'} target='_blank'>
+            <Link href={'https://yabbering-lorelei-nq-3d0e2f51.koyeb.app'} target='_blank'>
               <button className='bg-[#2c3e50] text-white px-12 py-3 rounded-md text-md font-semibold'>Visit Project</button>
             </Link>
             <Link href={'https://github.com/Prashant-2505/projectNest'} target='_blank'>
