@@ -75,14 +75,21 @@ const Experience = () => {
                 sm:w-full sm:p-0 sm:m-0 
                  
                 ">
-                    {/* <Details
-                        company="KalaGrafix"
-                        position="Frontend developer"
-                        time="Sepetember'2023 - Present"
+                  
+                  <Details
+                        company="Kalagrafix"
+                        position="Frontend Developer"
+                        time="October'2023 - Current"
                         address="Remote"
-                        work="In my role at the company, I have developed and designed templates using HTML, CSS, and JavaScript, showcasing my strong front-end skills. Utilizing React, I have created responsive and visually appealing websites to enhance user experiences. My work reflects a proficiency in web development, where I consistently implement efficient and dynamic solutions. Through my contributions, I have played a key role in the company's success by delivering high-quality front-end solutions and consistently meeting project requirements.
-                        "
-                    /> */}
+                        work="Developed and maintained the company website and projects using HTML, CSS, JavaScript, and React, enhancing user engagement by 25%. Designed a fully responsive layout for seamless performance across multiple devices. Optimized React components to improve website performance by 30%, reducing re-renders and load times. Resolved 20+ frontend issues, increasing reliability and cutting user-reported errors by 40%."
+                    />
+                       <Details
+                        company="Mentorkart"
+                        position="Software trainee"
+                        time="August'2024 - September'2024"
+                        address="Noida"
+                        work="I maintained a SaaS Job Portal and LMS, improving system stability by 20% and resolving 15+ critical bugs and UI issues. I developed a seamless sign-up flow, domain onboarding, and profile approval process, leading to a 30% increase in user engagement on the portal. Additionally, I built and enhanced the dashboard UI for the LMS from scratch, integrated pagination, and refactored the LMS code, which reduced load times by 40% and significantly improved platform efficiency."
+                    />
                      <Details
                         company="GSSOC"
                         position="Contributor"
